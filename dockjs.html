@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DockJS v0.1</title>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="css/DockJS/dock.css" type="text/css" />
+    <style>
+        #dock-root {
+            background: #404060;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
     <div id="dock-root"></div>
+    
+    <script src="js/DockJS/dock.js"></script>
+    <script>
+        /* global define DockJS */
+        new DockJS.Dock( document.getElementById("dock-root") );
+    </script>
 </body>
 </html>
